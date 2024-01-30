@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pinterest</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/pinterestIcon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__link">     
+            <figure class="header__figure">
+                <img src="images/pinterestIcon.png" alt="Simple Pinterest logo, click me go to reload page" class="header__img">
+            </figure>
+        </a>   
+        <form class="group">
+            <button type="submit" class="group__button">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                  <g>
+                    <path
+                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                    ></path>
+                  </g>
+                </svg>
+            </button>
+            <label>
+                <input class="input" type="search" placeholder="Search" list="genres"/>
+            </label>
+            <datalist id="genres">
+                <option value="waifu">Waifu</option>
+                <option value="neko">Neko</option>
+                <option value="shinobu">Shinobu</option>
+                <option value="megumin">Megumin</option>
+                <option value="dance">Dance</option>
+                <option value="smile">Smile</option>
+                <option value="cry">Cry</option>
+            </datalist>
+        </form>
+        <figure class="header__figure">
+            <svg xmlns="http://www.w3.org/2000/svg" class="header__img open__favorites" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+        </figure>
+    </header>
+    <main class="main">
+        <section class="favorites__container favorites__container__off">
+        </section>
+        <section class="container"></section>
+        <article class="modal__fav modal__fav__off">
+            <figure class="modal__fav__img">
+                <img src="" alt="Image to add a favorites images" class="modal__fav__add">
+            </figure>
+            <p>Save in Favorites</p>
+            <button class="modal__fav__button">Undo</button>
+        </article>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
